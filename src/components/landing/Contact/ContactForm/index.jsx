@@ -3,7 +3,8 @@ import { Form, withFormik, FastField, ErrorMessage } from 'formik';
 import Recaptcha from 'react-google-recaptcha';
 import * as Yup from 'yup';
 import { Button, Input } from 'components/common';
-import { recaptcha_key } from 'data/config';
+import { recaptcha_key as recaptchaKey } from 'data/config';
+import { func, bool, object } from 'prop-types';
 import { Error, Center, InputField } from './styles';
 
 const ContactForm = ({ setFieldValue, isSubmitting, values, errors, touched }) => (
@@ -57,7 +58,7 @@ const ContactForm = ({ setFieldValue, isSubmitting, values, errors, touched }) =
       <InputField>
         <FastField
           component={Recaptcha}
-          sitekey={recaptcha_key}
+          sitekey={recaptchaKey}
           name="recaptcha"
           onChange={value => setFieldValue('recaptcha', value)}
         />
@@ -123,3 +124,11 @@ export default withFormik({
     }
   },
 })(ContactForm);
+
+ContactForm.propTypes = {
+  setFieldValue: func,
+  isSubmitting: bool,
+  values: object,
+  errors: object,
+  touched: object,
+};

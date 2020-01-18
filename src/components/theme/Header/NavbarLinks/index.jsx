@@ -1,5 +1,6 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { bool } from 'prop-types';
 import { Wrapper } from './styles';
 
 const NavbarLinks = ({ desktop }) => (
@@ -11,3 +12,7 @@ const NavbarLinks = ({ desktop }) => (
 );
 
 export default NavbarLinks;
+
+NavbarLinks.propTypes = {
+  desktop: bool,
+};
