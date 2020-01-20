@@ -2,8 +2,8 @@
   "name": "portfolio",
   "private": true,
   "description": "A simple portfolio for developers",
-  "version": "0.1.2",
-  "author": "Smakosh <ismai23l@hotmail.com>",
+  "version": "1.0.0",
+  "author": "Robert Andrade <robert.andrade.developer@gmail.com>",
   "dependencies": {
     "core-js": "^3.6.4",
     "dotenv": "^8.2.0",
@@ -60,14 +60,15 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.0",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "install-peers": "^1.0.3",
     "prettier": "^1.19.1",
     "typescript": "^3.7.5"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:smakosh/gatsby-portfolio-dev.git"
+    "url": "git@github.com:RobertAndradeJr/gatsby-portfolio-dev.git"
   },
   "bugs": {
-    "url": "https://github.com/smakosh/gatsby-portfolio-dev/issues"
+    "url": "https://github.com/RobertAndradeJr/gatsby-portfolio-dev/issues"
   }
 }
